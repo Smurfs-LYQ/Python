@@ -1,4 +1,7 @@
-# -*- coding:utf-8 -*-
+one = 1
+two = 0
+while one <= 10 :
+    two += one
+    one += 1
 
-print('hello world')
-print('中文')
+print(two)
