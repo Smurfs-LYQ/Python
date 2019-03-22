@@ -47,32 +47,37 @@ while one <= 100 :
     one += 1
 '''
 
-# 求1-2+3-4...99的所有数的和
-'''
+# 求1-2+3-4...99的所有数除88的和
 one = 1
 two = 0
 while one < 100 :
-    if one % 2 == 0:
-        two -= one
-    else :
-        two += one
+    if one != 88 :
+        if one % 2 == 0:
+            two -= one
+        else :
+            two += one
     one += 1
 print(two)
+'''
+
 '''
 
 # 用户登录(三次登录机会)
 '''
 # 面向过程
-one = 1
-while one <= 3 :
+one = 3
+while one > 0 :
     username = input('请输入username: ')
     password = input('请输入password: ')
     if username == 'test' and password == '123' :
         print('登录成功')
         break
     else :
-        print('登录失败请重试')
-        one += 1
+        one -= 1
+        if one :
+            print('登录失败请重试，你还有%d次机会'%(one))
+        else :
+            print('你没机会了')
 '''
 
 '''
