@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # 用户交互
 one = int(input('请输入一个数字：'))
 
