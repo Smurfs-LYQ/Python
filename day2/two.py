@@ -4,8 +4,8 @@
 one = 1
 sum = 0
 while one < 100 :
-    if one != 88 :
         sum += one
+    if one != 88 :
         print(one)
     one += 1
 print(sum)
