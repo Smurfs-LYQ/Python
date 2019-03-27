@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
-# val = input('请输入要算的数：')
+# 使用while依次打印出下面的字母
+'''
+one = 'abcdefg'
+a = 0
+while a < len(one) :
+    print(one[a])
+    a += 1
+'''
 
-val = '1+2-3*4'
-for i in ['+', '-', '*', '/'] :
-    res = val.split('%s'%(str(i)))
-
-print(res)
+# 写一个字符串，注意用户可以输入字母等非法字符

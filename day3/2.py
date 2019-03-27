@@ -54,10 +54,6 @@ print(a.split('-'))    # '-'代表的是以-为标志进行分割
 a = 'one *wo *hr'
 print(a.replace('*','t',1))    # '*'代表的是要替换的字符，'t'代表的是替换后的字符，1代表的是替换几个
 
-# 检测字符串是否只以空格组成
-a = ' '
-print(a.isspace())
-
 # format的三种玩法，格式化输出
 a = '我是{},今年是{}年'.format('Smurfs的格格巫',2019)
 print(a)
@@ -73,3 +69,5 @@ a = '123'
 print(a.isdigit())    #字符串是否只由数字组成
 a = 'one123'
 print(a.isalnum())    #字符串是否由字母和数字组成
+a = ' '
+print(a.isspace())    #检测字符串是否只以空格组成
